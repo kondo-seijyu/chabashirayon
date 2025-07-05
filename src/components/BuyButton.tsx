@@ -1,8 +1,6 @@
 "use client";
-import { useRouter } from 'next/navigation';
 
 export function BuyButton() {
-  const router = useRouter();
 
   const handleClick = async () => {
     const res = await fetch('/api/checkout_sessions', { method: 'POST' });
