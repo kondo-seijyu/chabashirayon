@@ -10,7 +10,7 @@ export default function ThanksFukairi() {
   const [isValid, setIsValid] = useState(false);
 
   useEffect(() => {
-    const paid = searchParams.get("paid");
+    const paid = searchParams?.get("paid");
     if (paid === "true") {
       setIsValid(true);
     } else {
