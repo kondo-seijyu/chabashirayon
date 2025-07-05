@@ -31,8 +31,13 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#fcfbf9] p-6 text-center flex flex-col items-center justify-center space-y-10">
       <FadeIn delay={0.1}>
-        <h1 className="text-3xl md:text-4xl font-semibold">
-          ちょっと一服、そっと応援を。
+        <h1 className="text-[1.5rem] sm:text-3xl font-bold text-center leading-tight sm:leading-snug tracking-tight sm:tracking-normal mt-6 sm:mt-8">
+          <span className="block sm:hidden">
+            ちょっと一服、<br />そっと応援を。
+          </span>
+          <span className="hidden sm:inline">
+            ちょっと一服、そっと応援を。
+          </span>
         </h1>
       </FadeIn>
 
