@@ -30,6 +30,16 @@ const products = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#fcfbf9] p-6 text-center flex flex-col items-center justify-center space-y-10">
+      <FadeIn delay={0.05}>
+        <Image
+          src="/logo.png"
+          alt="ちゃばしらロゴ"
+          width={180}
+          height={180}
+          className="mx-auto mt-4 sm:mt-6"
+          priority
+        />
+      </FadeIn>
       <FadeIn delay={0.1}>
         <h1 className="text-[1.5rem] sm:text-3xl font-bold text-center leading-tight sm:leading-snug tracking-tight sm:tracking-normal mt-6 sm:mt-8">
           <span className="block sm:hidden">
