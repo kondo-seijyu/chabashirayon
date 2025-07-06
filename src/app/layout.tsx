@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Noto_Sans_JP, Shippori_Mincho } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const noto = Noto_Sans_JP({
   subsets: ["latin"],
+  variable: "--font-noto-sans",
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const shippori = Shippori_Mincho({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-shippori-mincho",
 });
 
 export const metadata: Metadata = {
@@ -48,9 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${shippori.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
