@@ -48,7 +48,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={`${shippori.variable} font-sans antialiased`}>
+      <body className={`${shippori.variable} ${noto.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
